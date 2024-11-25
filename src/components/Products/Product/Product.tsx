@@ -1,9 +1,9 @@
 import { KeyboardEvent } from 'react';
 
-import formatPrice from 'utils/formatPrice';
+import formatPrice from '@/utils/formatPrice';
 import { IProduct } from 'models';
 
-import { useCart } from 'contexts/cart-context';
+import { useCart } from '@/contexts/cart-context';
 
 import * as S from './style';
 

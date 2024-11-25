@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import cartIcon from '@/static/cart-icon.png';
 
 export const CartButton = styled.button`
   border: 0;
@@ -66,7 +67,7 @@ export const CartIcon = styled.div<ICartIcon>`
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  background-image: url(${require('static/cart-icon.png')});
+  background-image: url(${cartIcon});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

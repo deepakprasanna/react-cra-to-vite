@@ -1,4 +1,4 @@
-import { useProducts } from 'contexts/products-context';
+import { useProducts } from '@/contexts/products-context';
 
 import * as S from './style';
 

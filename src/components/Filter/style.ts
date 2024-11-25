@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 
-import CB from 'commons/Checkbox';
+import CB from '@/commons/Checkbox';
 
 export const Container = styled.div``;
 

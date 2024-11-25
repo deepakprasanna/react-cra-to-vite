@@ -1,5 +1,9 @@
 import styled from 'styled-components/macro';
 
+const getImageUrl = (sku: string | number, variant: 1 | 2) => {
+  return new URL(`/src/static/products/${sku}-${variant}-product.webp`, import.meta.url).href;
+};
+
 export const BuyButton = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
   color: #fff;
@@ -41,8 +45,7 @@ export const Container = styled.div<IContainer>`
     width: 100%;
     height: 270px;
     position: relative;
-    background-image: ${({ sku }) =>
-      `url(${require(`static/products/${sku}-1-product.webp`)})`};
+    background-image: ${({ sku }) => `url(${getImageUrl(sku, 1)})`};
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,8 +68,7 @@ export const Container = styled.div<IContainer>`
 
   &:hover {
     ${Image} {
-      background-image: ${({ sku }) =>
-        `url(${require(`static/products/${sku}-2-product.webp`)})`};
+      background-image: ${({ sku }) => `url(${getImageUrl(sku, 2)})`};
     }
 
     ${BuyButton} {

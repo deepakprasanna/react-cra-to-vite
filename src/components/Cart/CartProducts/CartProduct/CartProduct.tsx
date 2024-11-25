@@ -1,7 +1,7 @@
-import formatPrice from 'utils/formatPrice';
+import formatPrice from '@/utils/formatPrice';
 import { ICartProduct } from 'models';
 
-import { useCart } from 'contexts/cart-context';
+import { useCart } from '@/contexts/cart-context';
 
 import * as S from './style';
 
@@ -33,7 +33,7 @@ const CartProduct = ({ product }: IProps) => {
         title="remove product from cart"
       />
       <S.Image
-        src={require(`static/products/${sku}-1-cart.webp`)}
+        src={new URL(`../static/products/${sku}-1-cart.webp`, import.meta.url).href}
         alt={title}
       />
       <S.Details>

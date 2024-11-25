@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import DeleteIcon from '@/static/delete-icon.png';
 
 export const Container = styled.div`
   position: relative;
@@ -50,7 +51,7 @@ export const DeleteButton = styled.button`
   border-radius: 50%;
   position: absolute;
   background-size: auto 100%;
-  background-image: url(${require('static/delete-icon.png')});
+  background-image: url(${DeleteIcon});
   background-repeat: no-repeat;
   z-index: 2;
   cursor: pointer;

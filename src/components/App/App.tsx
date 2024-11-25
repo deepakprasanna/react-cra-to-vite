@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 
-import Loader from 'components/Loader';
-import { GithubCorner, GithubStarButton } from 'components/Github';
-import Recruiter from 'components/Recruiter';
-import Filter from 'components/Filter';
-import Products from 'components/Products';
-import Cart from 'components/Cart';
+import Loader from './../Loader';
+import { GithubCorner, GithubStarButton } from './../Github';
+import Recruiter from './../Recruiter';
+import Filter from './../Filter';
+import Products from './../Products';
+import Cart from './../Cart';
 
-import { useProducts } from 'contexts/products-context';
+import { useProducts } from './../../contexts/products-context';
 
 import * as S from './style';
 
