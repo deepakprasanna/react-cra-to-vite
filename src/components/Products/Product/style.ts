@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
 const getImageUrl = (sku: string | number, variant: 1 | 2) => {
   return new URL(`/src/static/products/${sku}-${variant}-product.webp`, import.meta.url).href;

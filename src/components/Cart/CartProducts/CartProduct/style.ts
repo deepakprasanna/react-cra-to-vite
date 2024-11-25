@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import DeleteIcon from '@/static/delete-icon.png';
 
 export const Container = styled.div`

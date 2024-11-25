@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: ['babel-plugin-macros'],
+        plugins: ['babel-plugin-styled-components'],
       },
     }),
   ],

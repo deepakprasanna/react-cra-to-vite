@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import flag from './nl-flag.png';
 
 export const Container = styled.div`
